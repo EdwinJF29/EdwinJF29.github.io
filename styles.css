@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 50px;
+  background-image: url('https://media.giphy.com/media/xTcnT2ZYSaCTdkTSmI/giphy.gif');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body.sin-fondo {
+  background-image: none;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/005/271/695/non_2x/casual-dots-and-hearts-wallpaper-design-element-pattern-hand-drawn-texture-with-heart-valentines-day-seamless-vector.jpg');
+  background-size: cover;
+}
+
+.titulo {
+  color: #ff6f69;
+  font-size: 60px;
+  text-align: center;
+}
+
+.wa {
+  color: #d04984c3;
+  font-size: 30px;
+  text-align: center;
+}
+
+#countdown {
+  font-size: 48px;
+  color: #ff6f69;
+  margin-top: 50px;
+}
+
+.oculto {
+  display: none;
+}
+
+#interfaz {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  transform-origin: top;
+  transform: scaleY(0);
+  text-align: justify;
+  line-height: 1.5;
+  border: 2px solid #d04984;
+  background-color: #ff6f69;
+  padding: 20px;
+  margin: 0 auto; /* Agregamos esta línea para centrar horizontalmente */
+  margin-top: 20px;
+  width: 60%; /* Ajustamos el ancho al 60% del contenedor */
+  height: 80vh; /* Ajustamos la altura al 80% de la altura visible del viewport */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#interfaz.mostrar {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+#interfaz h2,
+#interfaz p {
+  text-align: center;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+#interfaz .poesia {
+  font-style: italic;
+  text-indent: 30px;
+}
+
+.miClaseBoton {
+  background-color: #ff6f69;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.miClaseBoton:hover {
+  background-color: #d04984;
+}
+.gif-uno {
+  width: 400px; /* Ajusta el ancho deseado */
+  margin-top: 20px; /* Espacio entre el texto y el GIF */
+  position: absolute;
+  bottom: 10px; /* Ajusta la distancia desde la parte inferior */
+  left: 50%; /* Ajusta la posición horizontal */
+  transform: translateX(-50%); /* Centra horizontalmente */
+}
